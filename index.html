@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Presidential API</title>
+  </head>
+  <body>
+    <main>
+      <section class="soloData">
+        <h1>Presidential Api</h1>
+        <p>Fetch individual president data</p>
+        <label for="">https://presidential-api.herokuapp.com/api/</label>
+        <input type="text" placeholder="rutherford b hayes" />
+        <button>fetch</button>
+        <ul>
+          <li>Name: <span class="name">[string]</span></li>
+          <li>Presitdental Number: <span class="number">[number]</span></li>
+          <li>Served Through: <span class="served">[string]</span></li>
+          <li>Political Party: <span class="party">[string]</span></li>
+          <li>Vice President(s): <span class="vicePresident">[Array]</span></li>
+          <li>Birthday: <span class="born">[string]</span></li>
+          <li>Birth Location: <span class="birthLocation">[string]</span></li>
+          <li>Died: <span class="died">[string]</span></li>
+          <li>Resting Place: <span class="restingPlace">[string]</span></li>
+          <li>Portrait URL: <span class="url">[string]</span></li>
+        </ul>
+      </section>
+      <section class="presNamesContainer">
+        <p>You can also search by political party</p>
+        <p>
+          https://presidential-api.herokuapp.com/api/party/<span
+            class="partyExample"
+            >party</span
+          >
+        </p>
+        <button class="btn">Republican</button>
+        <button class="btn">Democratic</button>
+        <button class="btn">Democratic-Republican</button>
+        <button class="btn">Whig</button>
+        <button class="btn">Independent</button>
+        <button class="btn">Federalist</button>
+        <button class="btn">National Union</button>
+        <div>
+          <ul class="presNames"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
