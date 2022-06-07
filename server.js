@@ -1,8 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const presidents = require("./Presidents.js");
-const res = require("express/lib/response");
+const presidents = require("./js/Presidents.js");
 const PORT = 8000;
 
 app.use(cors());
@@ -34,10 +33,10 @@ app.get("/api/party/:party", (req, res) => {
 });
 
 app.get("/styles.css", (req, res) => {
-  res.sendFile(__dirname + "/styles.css");
+  res.sendFile(__dirname + "/css/styles.css");
 });
 app.get("/main.js", (req, res) => {
-  res.sendFile(__dirname + "/main.js");
+  res.sendFile(__dirname + "/js/main.js");
 });
 
 app.listen(process.env.PORT || PORT, () => {
